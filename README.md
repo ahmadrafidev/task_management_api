@@ -15,29 +15,45 @@ Pastikan Anda memiliki Python 3.7+ dan pip di komputer lokal.
 
 ### Clone repository:  
 
-   `git clone https://github.com/ahmadrafidev/task_management`  
-   `cd task_management`
+   ```bash
+   git clone https://github.com/ahmadrafidev/task_management 
+   cd task_management
+   ```
 
 ### Buat dan aktifkan virtual environment:  
 
 1. Untuk Linux/macOS:  
-   1. `python3 -m venv venv`  
-   2. `source venv/bin/activate`  
    
-2. Untuk Windows:  
-   1. `python -m venv venv`  
-   2. `.\venv\Scripts\activate`
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+   
+2. Untuk Windows:
 
-### Install dependencies:  
+   ```bash
+   python -m venv venv
+   .\venv\Scripts\activate
+   ```
 
-   `pip install -r requirements.txt`
+### Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ### Migrasi database:  
-   `python manage.py makemigrations`  
-   `python manage.py migrate`
+
+   ```bash
+   python manage.py makemigrations 
+   python manage.py migrate
+   ```
 
 ### Jalankan server:  
-   `python manage.py runserver`
+
+   ```bash
+   python manage.py runserver
+   ```
 
 ### Lihat Aplikasi
 
