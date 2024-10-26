@@ -13,7 +13,7 @@ Pastikan Anda memiliki Python 3.7+ dan pip di komputer lokal.
 
 ## Instalasi
 
-### Clone repository:  
+### Clone Repository:  
 
    ```bash
    git clone https://github.com/ahmadrafidev/task_management 
@@ -36,23 +36,29 @@ Pastikan Anda memiliki Python 3.7+ dan pip di komputer lokal.
    .\venv\Scripts\activate
    ```
 
-### Install dependencies:
+### Install Dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-### Migrasi database:  
+### Migrasi Database:  
 
    ```bash
    python manage.py makemigrations 
    python manage.py migrate
    ```
 
-### Jalankan server:  
+### Jalankan Server:  
 
    ```bash
    python manage.py runserver
+   ```
+
+### Jalankan Test:  
+
+   ```bash
+   python manage.py test
    ```
 
 ### Lihat Aplikasi

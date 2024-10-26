@@ -45,24 +45,65 @@ File ini berisi dokumentasi untuk Task Management API.
 2. **Membuat Tugas**  
    - **Endpoint**: `/api/tasks/`  
    - **Method**: `POST`  
-   - **Body**: `{ "title": "Belajar Django", "description": "Pelajari dasar-dasar Django REST Framework", "is_completed": false }`  
-   - **Response**: `{ "id": 1, "title": "Belajar Django", "description": "Pelajari dasar-dasar Django REST Framework", "is_completed": false, "created_at": "2024-10-25T10:00:00Z", "updated_at": "2024-10-25T10:00:00Z" }`
+   - **Body**:
+      ```json
+      { 
+        "title": "Belajar Django", 
+        "description": "Pelajari dasar-dasar Django REST Framework", 
+        "is_completed": false 
+      } 
+   - **Response**: 
+      ```json
+      { 
+        "id": 1, 
+        "title": "Belajar Django", 
+        "description": "Pelajari dasar-dasar Django REST Framework", 
+        "is_completed": false, 
+        "created_at": "2024-10-25T10:00:00Z", 
+        "updated_at": "2024-10-25T10:00:00Z" 
+      }
 
 3. **Mendapatkan Detail Tugas**  
    - **Endpoint**: `/api/tasks/1/`  
    - **Method**: `GET`  
-   - **Response**: `{ "id": 1, "title": "Belajar Django", "description": "Pelajari dasar-dasar Django REST Framework", "is_completed": false, "created_at": "2024-10-25T10:00:00Z", "updated_at": "2024-10-25T10:00:00Z" }`
+   - **Response**: 
+      ```json
+      { 
+        "id": 1, 
+        "title": "Belajar Django", 
+        "description": "Pelajari dasar-dasar Django REST Framework",
+        "is_completed": false, 
+        "created_at": "2024-10-25T10:00:00Z", 
+        "updated_at": "2024-10-25T10:00:00Z" 
+      }
 
 4. **Memperbarui Tugas**  
    - **Endpoint**: `/api/tasks/1/`  
    - **Method**: `PUT`  
-   - **Body**: `{ "title": "Belajar Django REST Framework", "description": "Pelajari Django REST Framework lebih mendalam", "is_completed": true }`  
-   - **Response**: `{ "id": 1, "title": "Belajar Django REST Framework", "description": "Pelajari Django REST Framework lebih mendalam", "is_completed": true, "created_at": "2024-10-25T10:00:00Z", "updated_at": "2024-10-25T11:00:00Z" }`
+   - **Body**: 
+     ```json
+      { 
+        "title": "Belajar Django REST Framework", 
+        "description": "Pelajari Django REST Framework lebih mendalam", "is_completed": true 
+      }  
+   - **Response**: 
+      ```json
+      { 
+        "id": 1, 
+        "title": "Belajar Django REST Framework", 
+        "description": "Pelajari Django REST Framework lebih mendalam", "is_completed": true, 
+        "created_at": "2024-10-25T10:00:00Z", 
+        "updated_at": "2024-10-25T11:00:00Z" 
+      }
 
-5. **Menghapus Tugas**  
+1. **Menghapus Tugas**  
    - **Endpoint**: `/api/tasks/1/`  
    - **Method**: `DELETE`  
-   - **Response**: `{ "message": "Tugas berhasil dihapus" }`
+   - **Response**: 
+      ```json
+      { 
+        "message": "Tugas berhasil dihapus" 
+      }
 
 ## Fitur Tambahan
 
