@@ -16,8 +16,8 @@ Pastikan Anda memiliki Python 3.7+ dan pip di komputer lokal.
 ### Clone Repository:  
 
    ```bash
-   git clone https://github.com/ahmadrafidev/task_management 
-   cd task_management
+   git clone https://github.com/ahmadrafidev/task_management_api.git 
+   cd task_management_api
    ```
 
 ### Buat dan aktifkan virtual environment:  
